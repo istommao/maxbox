@@ -46,7 +46,9 @@ import {
   GlobeOutline as GlobeOutlineIcon,
 
   CheckboxOutline as CheckBoxIcon,
-  LayersOutline as LayersIcon
+  LayersOutline as LayersIcon,
+
+  BarcodeOutline as BarcodeOutlineIcon
 } from '@vicons/ionicons5'
 
 function renderIcon (icon) {
@@ -70,6 +72,23 @@ const menuOptions = [
       ),
     key: 'hear-the-wind-sing',
     icon: renderIcon(HomeIcon)
+  },
+  {
+    label: () =>
+      h(
+        RouterLink,
+        {
+          to: {
+            name: 'JsonTool',
+            params: {
+              lang: 'zh-CN'
+            }
+          }
+        },
+        { default: () => 'JSON格式化' }
+      ),
+    key: 'JsonTool',
+    icon: renderIcon(BarcodeOutlineIcon)
   },
 ]
 
