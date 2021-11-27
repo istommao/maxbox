@@ -48,12 +48,16 @@ import {
   CheckboxOutline as CheckBoxIcon,
   LayersOutline as LayersIcon,
 
-  BarcodeOutline as BarcodeOutlineIcon
+  BarcodeOutline as BarcodeOutlineIcon,
+
+  ServerOutline as ServerOutlineIcon,
+
+  QrCodeOutline as QrCodeOutlineIcon,
 } from '@vicons/ionicons5'
 
 function renderIcon (icon) {
   return () => h(NIcon, null, { default: () => h(icon) })
-}
+};
 
 const menuOptions = [
   {
@@ -70,7 +74,7 @@ const menuOptions = [
         },
         { default: () => 'Home' }
       ),
-    key: 'hear-the-wind-sing',
+    key: 'home',
     icon: renderIcon(HomeIcon)
   },
   {
@@ -90,6 +94,40 @@ const menuOptions = [
     key: 'JsonTool',
     icon: renderIcon(BarcodeOutlineIcon)
   },
+  {
+    label: () =>
+      h(
+        RouterLink,
+        {
+          to: {
+            name: 'SQLite',
+            params: {
+              lang: 'zh-CN'
+            }
+          }
+        },
+        { default: () => 'SQLite' }
+      ),
+    key: 'SQLite',
+    icon: renderIcon(ServerOutlineIcon)
+  },
+  {
+    label: () =>
+      h(
+        RouterLink,
+        {
+          to: {
+            name: 'QRCode',
+            params: {
+              lang: 'zh-CN'
+            }
+          }
+        },
+        { default: () => 'QRCode' }
+      ),
+    key: 'QRCode',
+    icon: renderIcon(QrCodeOutlineIcon)
+  },
 ]
 
 export default defineComponent({
@@ -100,8 +138,8 @@ export default defineComponent({
   },
   setup () {
     return {
-      activeKey: ref(null),
-      collapsed: ref(true),
+      activeKey: ref('home'),
+      collapsed: ref(false),
       menuOptions
     }
   }

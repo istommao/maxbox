@@ -4,6 +4,8 @@ import Home from '@renderer/views/index.vue'
 import Page404 from '@renderer/views/404.vue'
 
 import JsonToolPage from '@renderer/views/JsonTool.vue';
+import SQLitePage from '@renderer/views/SQLite.vue';
+import QRCodePage from '@renderer/views/QRCode.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -20,6 +22,16 @@ const routes: Array<RouteRecordRaw> = [
     name: 'JsonTool',
     component: JsonToolPage,
   },
+  {
+    path: '/SQLite',
+    name: 'SQLite',
+    component: SQLitePage,
+  },
+  {
+    path: '/QRCode',
+    name: 'QRCode',
+    component: QRCodePage,
+  }
 ]
 
 export default createRouter({

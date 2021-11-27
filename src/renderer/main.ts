@@ -5,7 +5,7 @@ import router from './router'
 import './router/guard'
 import { errorHandler } from './utils/error'
 
-// import './assets/styles/global.css'
+import './assets/styles/global.css'
 
 const app = createApp(App)
 errorHandler(app)

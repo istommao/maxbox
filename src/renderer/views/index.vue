@@ -11,12 +11,12 @@
   <div id="main">
       <n-card title="TODO" hoverable> 
         <n-space vertical>
-          <n-checkbox v-model:checked="data">JSON format</n-checkbox>
-          <n-checkbox v-model:checked="data2">SQLite</n-checkbox>
-          <n-checkbox v-model:checked="data3">WebSocket</n-checkbox>
-          <n-checkbox v-model:checked="data4">SSH</n-checkbox>
-          <n-checkbox v-model:checked="data4">QRCode</n-checkbox>
-          <n-checkbox v-model:checked="data4">URL format</n-checkbox>
+          <n-checkbox :checked="true" :indeterminate="true">JSON format</n-checkbox>
+          <n-checkbox :checked="false">SQLite</n-checkbox>
+          <n-checkbox :checked="false">WebSocket</n-checkbox>
+          <n-checkbox :checked="false">SSH</n-checkbox>
+          <n-checkbox :checked="false">QRCode</n-checkbox>
+          <n-checkbox :checked="false">URL format</n-checkbox>
         </n-space>
      </n-card>
   </div>

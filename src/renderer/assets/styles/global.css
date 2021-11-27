@@ -1,5 +1,5 @@
 /* fade transition */
-.fade-enter-active,
+/* .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.28s;
 }
@@ -7,4 +7,10 @@
 .fade-enter,
 .fade-leave-active {
   opacity: 0;
+} */
+
+a, a::after, a::before {
+  /* -webkit-user-select: none; */
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;    
 }

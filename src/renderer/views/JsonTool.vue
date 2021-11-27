@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 1.5;
   padding: 5px;
-  height: calc(100vh - 240px);
+  height: calc(100vh - 250px);
 }
 
 /* optional class for removing the outline */
@@ -36,7 +36,7 @@
 .ShowFormatBox {
   display: flex;
   margin: 15px 0;
-  height: calc(100vh - 240px);
+  height: calc(100vh - 250px);
 }
 .n-input .n-input-wrapper {
     padding-right: 0;

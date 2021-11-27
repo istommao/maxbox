@@ -29,10 +29,11 @@ class MainInit {
   // Main window function
   createMainWindow() {
     this.mainWindow = new BrowserWindow({
-      height: 700,
       useContentSize: true,
-      width: 1024,
-      minWidth: 1024,
+      width: 1098,
+      minWidth: 1098,
+      height: 700,
+      minHeight: 700,
       show: false,
       frame: config.IsUseSysTitle,
       // titleBarStyle: 'hidden',
