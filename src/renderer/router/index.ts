@@ -6,6 +6,7 @@ import Page404 from '@renderer/views/404.vue'
 import JsonToolPage from '@renderer/views/JsonTool.vue';
 import SQLitePage from '@renderer/views/SQLite.vue';
 import QRCodePage from '@renderer/views/QRCode.vue';
+import TextBoxPage from '@renderer/views/TextBox.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -16,6 +17,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/TextBox',
+    name: 'TextBox',
+    component: TextBoxPage,
   },
   {
     path: '/JsonTool',

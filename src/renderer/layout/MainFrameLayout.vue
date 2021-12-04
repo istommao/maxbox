@@ -53,6 +53,7 @@ import {
   ServerOutline as ServerOutlineIcon,
 
   QrCodeOutline as QrCodeOutlineIcon,
+  ReaderOutline as ReaderOutlineIcon
 } from '@vicons/ionicons5'
 
 function renderIcon (icon) {
@@ -76,6 +77,23 @@ const menuOptions = [
       ),
     key: 'home',
     icon: renderIcon(HomeIcon)
+  },
+  {
+    label: () =>
+      h(
+        RouterLink,
+        {
+          to: {
+            name: 'TextBox',
+            params: {
+              lang: 'zh-CN'
+            }
+          }
+        },
+        { default: () => 'TextBox' }
+      ),
+    key: 'TextBox',
+    icon: renderIcon(ReaderOutlineIcon)
   },
   {
     label: () =>
