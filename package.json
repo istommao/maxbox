@@ -2,7 +2,7 @@
   "name": "maxbox",
   "description": "max's toolbox",
   "author": "codemax<istommao@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/electron/main/main.js",
   "license": "MIT",
   "scripts": {
@@ -91,6 +91,8 @@
     "@vueuse/core": "^7.0.3",
     "naive-ui": "^2.21.1",
     "prismjs": "^1.25.0",
+    "qrcode": "^1.5.0",
+    "qrcode-parser": "^2.0.0",
     "vue-prism-editor": "^2.0.0-alpha.2",
     "ws": "^8.3.0"
   }

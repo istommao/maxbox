@@ -15,7 +15,7 @@
           <n-checkbox :checked="false">SQLite</n-checkbox>
           <n-checkbox :checked="false">WebSocket</n-checkbox>
           <n-checkbox :checked="false">SSH</n-checkbox>
-          <n-checkbox :checked="false">QRCode</n-checkbox>
+          <n-checkbox :checked="true">QRCode</n-checkbox>
           <n-checkbox :checked="false">URL format</n-checkbox>
         </n-space>
      </n-card>

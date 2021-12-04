@@ -42,7 +42,7 @@
       <n-input
         v-model:value="InputCardBox"
         style="margin: 0"
-        placeholder="在此复制并粘贴你的文本数据"
+        placeholder="在此粘贴你的文本数据"
         type="textarea"
         size="small"
         :autosize="{
